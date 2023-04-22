@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TapiMangnifico | Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="mangoicon2.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+
+
+	<header>
+		<div class="container">
+			<div id="branding"> 
+				
+				<h1>Tapi<span class="highlight">Mang</span>nific<span class="highlight">o</span></h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Delicious Mango Tapioca</h1>
+			<p>Indulge in our creamy, refreshing and irresistible Mango Tapioca made with only the freshest and best ingredients</p>
+			<a href="#" class="btn">Order Now</a>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="about.png">
+				<h3>About Us</h3>
+				<p>We are a group of student entrepreneurs who are passionate about bringing the best desserts to our customers. With our innovative ideas and drive to succeed, we guarantee the highest quality and best taste in every bite.</p>
+			</div>
+			<div class="box">
+				<img src="mangoicon2.png">
+				<h3>Our Menu</h3>
+				<p>From classic Tapioca to unique flavors like Avocado and Strawberry, our menu has something for everyone. Come and try our irresistible Mango Tapioca, you won't regret it.</p>
+			  </div>
+			 
+			<div class="box">
+				<img src="contact.jpg">
+				<h3>Contact Us</h3>
+				<p>Got a question or suggestion? We'd love to hear from you! Give us a call or send us an email, we are here to help.</p>
+			</div>
+			 
+			<style>
+				.box img {
+				  width: 50px;
+				  height: 50px;
+				}
+			  </style>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 TapiMangnifico</p>
+		</div>
+	</footer>
+
+	<script>
+		window.onscroll = function() {
+		  myFunction();
+	  
+		  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	  
+		  if (winScroll > height * 0.75) {
+			document.getElementById("scroll-btn").style.display = "block";
+		  } else {
+			document.getElementById("scroll-btn").style.display = "none";
+		  }
+		};
+	  
+		function myFunction() {
+		  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		  var scrolled = (winScroll / height) * 100;
+		  document.getElementById("progress-bar").style.width = scrolled + "%";
+		}
+	  
+		function scrollToTop() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	  </script>
+	  
+	  <div id="scroll-btn" onclick="scrollToTop()">
+		<span class="arrow"></span>
+	  </div>
+	  
+		
+
+	
+</body>
+</html>
